@@ -1,0 +1,138 @@
+{
+    "angular": {
+        "_src": [
+            "./static_develop/application/app.js",
+            "./static_develop/application/config/*.js",
+            "./static_develop/application/**/*.js"
+        ],
+        "_dest": ["./static/app/application/"],
+        "_del": ["./static/app/application/**/*.*"],
+        "_file_name": "application.min.js",
+        "_build_src": ["./static/app/application/**/*.js"]
+    },
+
+    "bowerComponents": {
+        "_src": [
+            "./static_develop/bower/es5-shim/es5-shim.min.js",
+            "./static_develop/bower/bower-sockjs-client/sockjs.min.js",
+
+            "./static_develop/bower/fastclick/lib/fastclick.js",
+
+            "./static_develop/bower/viewport-units-buggyfill/viewport-units-buggyfill.js",
+            "./static_develop/bower/viewport-units-buggyfill/viewport-units-buggyfill.hacks.js",
+
+            "./static_develop/bower/angular/angular.min.js",
+            "./static_develop/bower/angular-resource/angular-resource.min.js",
+            "./static_develop/bower/angular-route/angular-route.min.js",
+            "./static_develop/bower/angular-cookies/angular-cookies.min.js",
+            "./static_develop/bower/angular-sanitize/angular-sanitize.min.js",
+            "./static_develop/bower/angular-touch/angular-touch.min.js",
+            "./static_develop/bower/angular-animate/angular-animate.min.js",
+
+            "./static_develop/bower/angular-filter/dist/angular-filter.min.js",
+
+            "./static_develop/bower/angular-strap/dist/angular-strap.min.js",
+            "./static_develop/bower/angular-strap/dist/angular-strap.tpl.min.js",
+
+            "./static_develop/bower/angular-ui-grid/ui-grid.min.js",
+            "./static_develop/bower/venturocket-angular-slider/build/angular-slider.min.js",
+            "./static_develop/scripts/utils/django-angular.js",
+            "./static_develop/bower/angular-re-captcha/angular-re-captcha.js"
+        ],
+        "_dest": ["./static/app/bower/"],
+        "_del": ["./static/app/bower/**", "!./static/app/bower"],
+        "_file_name": "bower_components.min.js",
+        "_filter": [
+            "fastclick.js",
+            "viewport-units-buggyfill.js",
+            "viewport-units-buggyfill.hacks.js",
+            "django-angular.js",
+            "angular-re-captcha.js"
+        ],
+        "_build_src": ["./static/app/bower/**/*.js"]
+    },
+
+    "scripts": {
+        "_src": [
+            "./static_develop/scripts/utils/*.js",
+            "./static_develop/scripts/*.js",
+            "!./static_develop/scripts/utils/django-angular.js"
+        ],
+        "_dest": ["./static/app/scripts/"],
+        "_del": ["./static/app/scripts/**", "!./static/app/scripts"],
+        "_file_name": "scripts.min.js",
+        "_build_src": ["./static/app/scripts/**/*.js"]
+    },
+
+    "styles": {
+        "_src": ["./static_develop/styles/application.styl", "./static_develop/styles/**/*.styl"],
+        "_dest": ["./static/app/styles/"],
+        "_del": ["./static/app/styles/**", "!./static/app/styles"],
+        "_file_name": "application.min.css",
+        "_build_src": ["./static/app/styles/*.css"]
+    },
+
+    "fonts": {
+        "_src": ["./static_develop/bower/**/*.{eot,svg,ttf,woff}"],
+        "_dest": ["./static/app/fonts/"],
+        "_del": ["./static/app/fonts/**", "!./static/app/fonts"]
+    },
+
+    "sprites": {
+        "_src": ["./static_develop/images/to_sprite/**/*.png"],
+        "_dest": [
+            "./static_develop/images/",
+            "./static_develop/styles/"
+        ],
+        "_del": [
+            "./static_develop/images/bettor.sprite.png",
+            "./static_develop/styles/bettor.sprite.css"
+        ],
+        "_path_to_img": ["../images/"],
+        "_img_name": "bettor.sprite.png",
+        "_css_name": "bettor.sprite.css"
+    },
+
+    "images": {
+        "_src": ["./static_develop/images/*.{svg,png,jpg,gif,ico}"],
+        "_dest": ["./static/app/images/"],
+        "_del": ["./static/app/images/**", "!./static/app/images"]
+    },
+
+    "favicons": {
+        "_src": ["./static_develop/images/bettor-favicon-template.png"],
+        "_dest": ["./static/app/images/"],
+        "_del": ["./static/app/images/**", "!./static/app/images"]
+    },
+
+    "templatesCache": {
+        "_src": ["./static_develop/application/views/**/*.tpl.html"],
+        "_dest": ["./static_develop/application/config/"],
+        "_del": ["./static_develop/application/config/bettor.templates.js"],
+        "_root": "/static/app/views/",
+        "_module_name": "bettor.templates",
+        "_file_name": "bettor.templates.js",
+        "_standalone": true
+    },
+
+    "templatesHTML": {
+        "_src": [
+            "./static_develop/application/views/**/*.html",
+            "!./static_develop/application/views/**/*.tpl.html",
+            "./static_develop/application/views/**/*.txt"
+        ],
+        "_dest": ["./static/app/views/"],
+        "_del": ["./static/app/views/**", "!./static/app/views"],
+        "_filter": ["**/*.html", "!base.html"],
+        "_base_html_path": ["./static_develop/application/views/base.html"]
+    },
+
+    "documentation": {
+        "_src": [
+            "./static_develop/application/**/*.js",
+            "!./static_develop/application/config/bettor.templates.js"
+        ],
+        "_dest": ["./static/app/documentation/"],
+        "_del": ["./static/app/documentation/**", "!./static/app/documentation"]
+    }
+}

@@ -1,0 +1,15 @@
+# Editor files
+.pydevproject
+.project
+.idea
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+
+# Other
+README.md~
+
+
+# node related
+node_modules
