@@ -1,0 +1,43 @@
+{
+  "name": "chubatov.github.io",
+  "version": "1.0.0",
+  "description": "TODO: ...",
+  "main": "index.html",
+  "scripts": {
+    "develop":    "NODE_ENV=develop ./node_modules/gulp/bin/gulp.js dev",
+    "production": "NODE_ENV=production ./node_modules/gulp/bin/gulp.js prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chubatov/chubatov.github.io.git"
+  },
+  "author": "SteelKiwi Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chubatov/chubatov.github.io/issues"
+  },
+  "homepage": "https://github.com/chubatov/chubatov.github.io#readme",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssimport": "^3.0.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-if-else": "^1.0.3",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1",
+    "jshint": "^2.9.2",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^1.0.0",
+    "node-static": "^0.7.7"
+  }
+}
